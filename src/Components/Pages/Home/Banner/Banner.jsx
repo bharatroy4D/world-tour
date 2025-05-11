@@ -1,13 +1,13 @@
 import React from 'react';
 import { FaSearchLocation, FaFlag, FaCalendarAlt, FaUserFriends, FaSearch } from "react-icons/fa";
-
-// import hero from '../../../../assets/hero_img.jpg'
-import hero_4 from '../../../../assets/hero_4avif.avif'
+import hero from '../../../../assets/hero.jpg'
+import hero_1 from '../../../../assets/hero_1.jpg'
+import hero_2 from '../../../../assets/hero_2.jpg'
 
 const Banner = () => {
     return (
-        <div className='container relative w-full lg:max-w-7xl opacity-95 mx-auto h-screen overflow-hidden'>
-            <img src={hero_4} alt="" className='w-full h-full' />
+        <div className='container relative w-full lg:max-w-7xl opacity-95 mx-auto h-screen overflow-hidden '>
+            <img src={hero_2} alt="" className='w-full h-full' />
 
             {/* banner content text */}
             <div className='absolute bottom-10 w-full'>
