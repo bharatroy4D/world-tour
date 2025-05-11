@@ -74,7 +74,7 @@ const AmazingPlaces = () => {
                                     onClick={() => alert(`Booking for ${place.name}`)}
                                     className="px-6 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition"
                                 >
-                                    Book Now
+                                    Explore
                                 </button>
                             </div>
                         </div>
