@@ -11,7 +11,7 @@ const destinations = [
     id: 2,
     name: 'Bali',
     location: 'Indonesia',
-    image: 'https://images.unsplash.com/photo-1549887534-1723e5032e92', // Bali Beach
+    image: 'https://img.freepik.com/free-photo/woman-walking-kelingking-beach-nusa-penida-island-bali-indonesia_335224-337.jpg?uid=R180858093&semt=ais_hybrid&w=740', // Bali Beach
   },
   {
     id: 3,
@@ -23,37 +23,38 @@ const destinations = [
     id: 4,
     name: 'Kyoto',
     location: 'Japan',
-    image: 'https://images.unsplash.com/photo-1587191139211-8f3b30d951f3', // Kyoto Temple
+    image: 'https://img.freepik.com/free-photo/woman-bikini-sitting-viewpoint-nang-yuan-island-thailand_335224-1091.jpg?uid=R180858093&semt=ais_hybrid&w=740', // Kyoto Temple
   },
   {
     id: 5,
-    name: 'New York City',
-    location: 'USA',
-    image: 'https://images.unsplash.com/photo-1549924231-f129b911e442', // NYC Skyline
+    name: 'Park Girl with Laptop',
+    location: 'Unknown',
+    image: 'https://img.freepik.com/free-photo/brunette-girl-sunglasses-is-sitting-fence-park-she-holds-yellow-laptop-smiling-camera_197531-25034.jpg?uid=R180858093&semt=ais_hybrid&w=740',
   },
   {
     id: 6,
-    name: 'Rome',
-    location: 'Italy',
-    image: 'https://images.unsplash.com/photo-1526481280691-906f9a522b29', // Colosseum
+    name: 'Koh Nangyuan Island Viewpoint',
+    location: 'Thailand',
+    image: 'https://img.freepik.com/free-photo/beautiful-viewpoint-koh-nangyuan-island-surat-thani-thailand_335224-1097.jpg?uid=R180858093&semt=ais_hybrid&w=740',
   },
   {
     id: 7,
-    name: 'Dubai',
-    location: 'UAE',
-    image: 'https://images.unsplash.com/photo-1571030908226-89763f9e84b8', // Dubai Skyline
+    name: 'Nang Yuan Island Viewpoint',
+    location: 'Thailand',
+    image: 'https://img.freepik.com/free-photo/woman-bikini-sitting-viewpoint-nang-yuan-island-thailand_335224-1091.jpg?uid=R180858093&semt=ais_hybrid&w=740',
   },
   {
     id: 8,
-    name: 'Cape Town',
-    location: 'South Africa',
-    image: 'https://images.unsplash.com/photo-1599471795736-55f1f21e0f83', // Table Mountain, Cape Town
-  },
+    name: 'Kelingking Beach Walk',
+    location: 'Bali, Indonesia',
+    image: 'https://img.freepik.com/free-photo/woman-walking-kelingking-beach-nusa-penida-island-bali-indonesia_335224-337.jpg?uid=R180858093&semt=ais_hybrid&w=740',
+  }
 ];
+
 
 const Destination = () => {
   return (
-    <div className="bg-white py-16 px-5 lg:px-20 text-center">
+    <div className="bg-white py-10 px-5 lg:px-20 text-center">
       <p className="text-orange-500 text-base font-medium mb-2">Top Travel Spots</p>
       <h2 className="text-3xl font-bold text-gray-800 mb-10">Popular Destinations</h2>
 

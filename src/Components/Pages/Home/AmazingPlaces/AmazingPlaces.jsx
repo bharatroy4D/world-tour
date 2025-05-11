@@ -45,9 +45,9 @@ const AmazingPlaces = () => {
             {/* Grid layout for displaying places */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 {displayedPlaces.map((place) => (
-                    <div key={place.id} className="bg-white border rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
+                    <div key={place.id} className="bg-white border rounded-xl overflow-hidden shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300">
                         <img src={place.image} alt={place.name} className="w-full h-48 object-cover" />
-                        <div className="p-4">
+                        <div className="p-5 text-left bg-white">
                             {/* Name and Rating */}
                             <div className="flex justify-between items-center mb-4">
                                 <h3 className="text-xl font-semibold text-gray-800 hover:text-green-600 transition duration-300">{place.name}</h3>
