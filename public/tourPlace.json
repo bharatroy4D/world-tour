@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Cox’s Bazar",
+    "description": "Sea, Beach, Resorts",
+    "category": "Popular",
+    "image": "https://img.freepik.com/free-photo/beautiful-girl-standing-boat-looking-mountains-ratchaprapha-dam-khao-sok-national-park-surat-thani-province-thailand_335224-846.jpg?uid=R180858093&semt=ais_hybrid&w=740"
+  },
+  {
+    "id": 2,
+    "name": "Bandarban",
+    "description": "Hill, Nature, Hiking",
+    "category": "Popular",
+    "image": "https://img.freepik.com/free-photo/maldives-island_1203-3252.jpg?uid=R180858093&semt=ais_hybrid&w=740"
+  },
+  {
+    "id": 3,
+    "name": "Sylhet",
+    "description": "Tea Garden, Culture",
+    "category": "Historical",
+    "image": "https://img.freepik.com/free-photo/lagoon-landscape-hut-reef-bay_1232-4571.jpg?uid=R180858093&semt=ais_hybrid&w=740"
+  },
+  {
+    "id": 4,
+    "name": "Dhaka",
+    "description": "City Tour, Museum",
+    "category": "Historical",
+    "image": "https://img.freepik.com/free-photo/sea-vacation-beach-villa-nature_1203-5314.jpg?uid=R180858093&semt=ais_hybrid&w=740"
+  },
+  {
+    "id": 5,
+    "name": "Sajek",
+    "description": "Green Hills, Sunrise",
+    "category": "Latest",
+    "image": "https://img.freepik.com/free-photo/beautiful-aerial-view-beach_74190-6862.jpg?uid=R180858093&semt=ais_hybrid&w=740"
+  },
+  {
+    "id": 6,
+    "name": "Kuakata",
+    "description": "Sea View, Sunset",
+    "category": "Popular",
+    "image": "https://img.freepik.com/free-photo/maldives-house-exotic-travel-sea_1203-5358.jpg?uid=R180858093&semt=ais_hybrid&w=740"
+  },
+  {
+    "id": 7,
+    "name": "Rangamati",
+    "description": "Lake, Hill, Boat Ride",
+    "category": "Festivals",
+    "image": "https://img.freepik.com/free-photo/umbrella-chair-around-swimming-pool_1203-2419.jpg?uid=R180858093&semt=ais_hybrid&w=740"
+  },
+  {
+    "id": 8,
+    "name": "Sundarbans",
+    "description": "Mangrove Forest, Wildlife",
+    "category": "Popular",
+    "image": "https://img.freepik.com/free-photo/beach-water-beautiful-leisure-health_1203-4902.jpg?uid=R180858093&semt=ais_hybrid&w=740"
+  }
+]

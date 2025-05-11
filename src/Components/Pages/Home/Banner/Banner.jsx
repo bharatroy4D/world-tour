@@ -11,8 +11,8 @@ const Banner = () => {
 
             {/* banner content text */}
             <div className='absolute bottom-10 w-full'>
-                <h1 className='container text-5xl text-white font-bold text-center'>Hello World Welcome</h1>
-                <div className="flex items-center justify-between gap-5 py-3 px-10 mt-50 bg-white rounded-full shadow-md w-fit mx-auto">
+                <h1 className='container text-5xl text-white font-bold text-center'>Explore The World With Us</h1>
+                <div className="flex items-center justify-between gap-5 py-5 px-10 mt-50 bg-white rounded shadow-md w-fit mx-auto">
                     {/* Location */}
                     <div className="flex items-center gap-2 px-4 py-2 border rounded-full text-gray-700">
                         <FaSearchLocation />
