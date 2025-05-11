@@ -6,7 +6,7 @@ import plan from '../../../assets/plane_shape.png';
 
 const About = () => {
   return (
-    <div className="bg-base-300 py-10 px-5 lg:px-10">
+    <div className="bg-base-200 py-10 px-5 lg:px-10">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
         {/* Left Side - Image Section */}
         <div className="relative w-full lg:w-[50%]">

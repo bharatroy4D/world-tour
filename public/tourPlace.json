@@ -17,21 +17,21 @@
     "id": 3,
     "name": "Sylhet",
     "description": "Tea Garden, Culture",
-    "category": "Historical",
+    "category": "Featured",
     "image": "https://img.freepik.com/free-photo/lagoon-landscape-hut-reef-bay_1232-4571.jpg?uid=R180858093&semt=ais_hybrid&w=740"
   },
   {
     "id": 4,
     "name": "Dhaka",
     "description": "City Tour, Museum",
-    "category": "Historical",
+    "category": "Featured",
     "image": "https://img.freepik.com/free-photo/sea-vacation-beach-villa-nature_1203-5314.jpg?uid=R180858093&semt=ais_hybrid&w=740"
   },
   {
     "id": 5,
     "name": "Sajek",
     "description": "Green Hills, Sunrise",
-    "category": "Latest",
+    "category": "New",
     "image": "https://img.freepik.com/free-photo/beautiful-aerial-view-beach_74190-6862.jpg?uid=R180858093&semt=ais_hybrid&w=740"
   },
   {
@@ -45,7 +45,7 @@
     "id": 7,
     "name": "Rangamati",
     "description": "Lake, Hill, Boat Ride",
-    "category": "Festivals",
+    "category": "Discount",
     "image": "https://img.freepik.com/free-photo/umbrella-chair-around-swimming-pool_1203-2419.jpg?uid=R180858093&semt=ais_hybrid&w=740"
   },
   {
