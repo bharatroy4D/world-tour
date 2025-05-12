@@ -30,7 +30,7 @@ const services = [
 
 const Services = () => {
   return (
-    <div className="bg-gray-100 py-16 px-5 lg:px-20 text-center">
+    <div className="bg-gray-100 w-full lg:max-w-7xl py-16 px-5 lg:px-20 mx-auto text-center">
       <p className="text-orange-500 text-base font-medium mb-2">Our Services</p>
       <h2 className="text-3xl font-bold text-gray-800 mb-10">Explore Our Travel Services</h2>
 

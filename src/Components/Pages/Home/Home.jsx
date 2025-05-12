@@ -4,6 +4,7 @@ import Destination from './Destination/Destination';
 import About from '../About/About';
 import AmazingPlaces from './AmazingPlaces/AmazingPlaces';
 import Testimonial from './Testimonial/Testimonial';
+import Facility from './Facility/Facility';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <About/>
             <AmazingPlaces/>
             <Testimonial/>
+            <Facility/>
         </div>
     );
 };
