@@ -10,7 +10,7 @@ import hero_2 from '../../../../assets/hero_2.jpg';
 
 const Banner = () => {
   return (
-    <div className='relative w-full h-screen max-w-7xl mx-auto overflow-hidden'>
+    <div className='relative w-full h-[65%] lg:h-screen max-w-7xl mx-auto overflow-hidden'>
       {/* Background Image */}
       <img src={hero_2} alt="Banner" className='w-full h-full object-cover' />
 
