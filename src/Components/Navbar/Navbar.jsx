@@ -10,8 +10,8 @@ const Navbar = () => {
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
     return (
-        <div className='w-full bg-base-300 shadow-2xl'>
-            <div className='flex items-center justify-between px-5 py-4 lg:px-10 max-w-7xl mx-auto'>
+        <div className='w-full max-w-7xl mx-auto bg-base-300 shadow-2xl'>
+            <div className='flex items-center justify-between px-5 py-4 lg:px-20 '>
                 {/* Logo */}
                 <img src={logo} alt="Logo" className='w-28' />
 
@@ -29,7 +29,7 @@ const Navbar = () => {
                 <div className='hidden lg:flex items-center gap-5'>
                     <CiSearch className='text-2xl' />
                     <CiHeart className='text-2xl' />
-                    <button className='font-semibold bg-green-400 py-1.5 px-4 rounded-full'>
+                    <button className='font-semibold text-white bg-[#FF710D] py-1.5 px-4 rounded-full'>
                         Book Now
                     </button>
                 </div>
@@ -55,7 +55,7 @@ const Navbar = () => {
                         <CiSearch className='text-2xl' />
                         <CiHeart className='text-2xl' />
                     </div>
-                    <button className='font-semibold bg-green-400 py-1.5 px-4 rounded-full'>
+                    <button className='font-semibold text-white bg-[#FF710D] py-1.5 px-4 rounded-full'>
                         Book Now
                     </button>
                 </div>
