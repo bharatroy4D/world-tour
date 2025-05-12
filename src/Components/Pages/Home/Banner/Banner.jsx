@@ -20,10 +20,10 @@ const Banner = () => {
       </h1>
 
       {/* Search Box */}
-      <div className='absolute bottom-10 w-full px-4 lg:px-0'>
+      <div className='hidden lg:block absolute bottom-10 w-full px-4 lg:px-0'>
         <div className="mt-6 bg-white rounded-full shadow-md w-full max-w-5xl mx-auto px-4 py-5 flex flex-col md:flex-row gap-4 md:gap-5 items-center justify-between">
           {/* Location */}
-          <div className="flex items-center gap-2 w-full border px-4 py-2 rounded-full text-gray-700">
+        <div className="flex items-center gap-2 w-44 lg:w-full border px-4 py-2 rounded-full text-gray-700">
             <FaSearchLocation />
             <span className='text-sm md:text-base'>Where to?</span>
            
@@ -49,7 +49,7 @@ const Banner = () => {
           </div>
 
           {/* Search Button */}
-          <button className="flex items-center justify-center gap-2 px-6 py-2 text-white bg-orange-500 rounded-full hover:bg-orange-600 text-sm md:text-base w-full">
+          <button className="flex items-center justify-center gap-2 px-6 py-2 text-white bg-orange-500 rounded-full hover:bg-orange-600 text-sm md:text-base w-fit lg:w-full">
             <FaSearch />
             Search
           </button>
