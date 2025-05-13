@@ -10,13 +10,13 @@ const Navbar = () => {
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
     return (
-        <div className='w-full max-w-7xl mx-auto bg-base-300 shadow-2xl'>
-            <div className='flex items-center justify-between px-5 py-4 lg:px-20 '>
+        <div className='container mx-auto px-5 lg:px-10 poppins '>
+            <div className='flex items-center justify-between py-4  '>
                 {/* Logo */}
                 <img src={logo} alt="Logo" className='w-28' />
 
                 {/* Desktop Menu */}
-                <div className='hidden lg:flex gap-8 items-center text-lg font-semibold'>
+                <div className='hidden lg:flex gap-8 items-center font-semibold'>
                     <NavLink to='/'>Home</NavLink>
                     <NavLink to='/about'>About</NavLink>
                     <NavLink to='/destination'>Destination</NavLink>

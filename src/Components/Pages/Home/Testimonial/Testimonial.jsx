@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaStar } from 'react-icons/fa';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const testimonials = [
   {
@@ -26,15 +28,25 @@ const testimonials = [
 ];
 
 const Testimonial = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
+  const aosAnimations = ['fade-right', 'fade-up', 'fade-left'];
+
   return (
     <div className="bg-green-50 py-15 px-5 lg:px-20 text-center">
-      <p className="text-orange-500 text-base font-medium mb-2">What Our Travelers Say</p>
+      <p className="text-orange-500 text-sm font-medium mb-2">What Our Travelers Say</p>
       <h2 className="text-3xl font-bold text-gray-800 mb-12">Testimonials</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {testimonials.map((testimonial) => (
+        {testimonials.map((testimonial, index) => (
           <div
             key={testimonial.id}
+            data-aos={aosAnimations[index]}
             className="bg-white rounded-xl p-6 shadow-md border hover:shadow-lg transition duration-300 text-left"
           >
             <div className="flex items-center gap-4 mb-4">
@@ -46,10 +58,10 @@ const Testimonial = () => {
               <div>
                 <h4 className="text-lg font-semibold text-gray-800">{testimonial.name}</h4>
                 <div className="flex text-yellow-400">
-                  {[...Array(5)].map((_, index) => (
+                  {[...Array(5)].map((_, starIndex) => (
                     <FaStar
-                      key={index}
-                      className={index < testimonial.rating ? 'text-yellow-400' : 'text-gray-300'}
+                      key={starIndex}
+                      className={starIndex < testimonial.rating ? 'text-yellow-400' : 'text-gray-300'}
                     />
                   ))}
                 </div>

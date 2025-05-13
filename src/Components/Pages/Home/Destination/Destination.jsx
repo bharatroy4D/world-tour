@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { MdOutlineKeyboardArrowRight, MdOutlineKeyboardArrowLeft } from "react-icons/md";
-
+import { AiFillStar } from "react-icons/ai"; // ⭐ Rating star icon
 
 const PrevArrow = ({ onClick }) => (
   <div
@@ -35,7 +35,7 @@ const Destination = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 600,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
@@ -59,31 +59,50 @@ const Destination = () => {
   };
 
   return (
-    <div className="py-12 px-5 lg:px-20 bg-gradient-to-r from-blue-50 to-pink-50 relative">
-      <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+    <div className="container py-12 px-5 lg:px-10 bg-gradient-to-r from-blue-50 to-pink-50 relative">
+      <h2 className="text-3xl font-bold  text-gray-800 mb-6 roboto ">
         Explore Popular Destinations
       </h2>
       <Slider {...settings}>
         {destinations.map((place) => (
           <div key={place.id} className="p-3">
-            <div className="bg-white rounded-md shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
-              <div className="relative p-4 pt-6">
-                <div className="overflow-hidden rounded-t-full shadow-md">
+            <div className="bg-white rounded-2xl shadow hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+              <div className="relative p-4">
+                <div className="overflow-hidden shadow-md ">
                   <img
                     src={place.image}
                     alt={place.name}
-                    className="w-full h-40 object-cover rounded-t-full"
+                    className="w-full  h-40 object-cover rounded transform hover:scale-110 duration-1000"
                   />
                 </div>
-                <div className="absolute top-2 left-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white text-xs font-semibold px-3 py-1 rounded-full shadow">
+                <div className="absolute top-2 left-2 bg-gradient-to-r from-red-500 to-pink-500 text-white text-xs font-semibold px-3 py-2 rounded-full shadow">
                   Top Place
                 </div>
               </div>
-              <div className="px-4 pb-6 text-center">
-                <h3 className="text-lg font-semibold text-gray-800 mb-1">
-                  {place.name}
-                </h3>
-                <p className="text-sm text-gray-500">{place.description}</p>
+              <div className="px-4 py-4">
+                <div className='flex items-center justify-between'>
+                  <h3 className=" font-bold text-gray-700 mb-1">
+                    {place.name}
+                  </h3>
+
+                  {/* ⭐ Rating */}
+                  <div className="flex items-center text-yellow-500 mb-1">
+                    {[...Array(5)].map((_, i) => (
+                      <AiFillStar
+                        key={i}
+                        className={i < Math.round(place.rating) ? "text-yellow-400" : "text-yellow-300"}
+                      />
+                    ))}
+                    <span className="ml-2 text-sm text-gray-600">({place.rating})</span>
+                  </div>
+                </div>
+
+                <p className="text-sm text-gray-500 py-1">{place.description}</p>
+                <p className='text-gray-700 text-sm'>Duration: <span className='text-gray-500'>{place.duration}</span></p>
+                <p className='text-gray-700 '>Price : <span className='text-gray-500'>{place.price}</span></p>
+                <button className='font-semibold bg-blue-400  hover:bg-blue-600 text-white px-5 py-2 mt-3 border border-gray-400 rounded-md'>
+                  Explore
+                </button>
               </div>
             </div>
           </div>
