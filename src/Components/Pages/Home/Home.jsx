@@ -5,14 +5,16 @@ import About from '../About/About';
 import AmazingPlaces from './AmazingPlaces/AmazingPlaces';
 import Testimonial from './Testimonial/Testimonial';
 import Facility from './Facility/Facility';
+import DemoCard from './DemoCard/DemoCard';
 
 const Home = () => {
     return (
-        <div className='w-full lg:max-w-7xl  mx-auto'>
+        <div className='w-full container mx-auto'>
             <Banner/>
             <Destination/>
             <About/>
             <AmazingPlaces/>
+            <DemoCard/>
             <Testimonial/>
             <Facility/>
         </div>

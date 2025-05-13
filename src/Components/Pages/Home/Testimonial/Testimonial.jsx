@@ -38,7 +38,7 @@ const Testimonial = () => {
   const aosAnimations = ['fade-right', 'fade-up', 'fade-left'];
 
   return (
-    <div className="bg-green-50 py-15 px-5 lg:px-20 text-center">
+    <div className="bg-green-50 py-15 px-5 lg:px-10 mx-auto text-center">
       <p className="text-orange-500 text-sm font-medium mb-2">What Our Travelers Say</p>
       <h2 className="text-3xl font-bold text-gray-800 mb-12">Testimonials</h2>
 
@@ -67,7 +67,7 @@ const Testimonial = () => {
                 </div>
               </div>
             </div>
-            <p className="text-gray-600 text-sm">{testimonial.comment}</p>
+            <p className="text-gray-600 text-sm">{testimonial.comment} Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa est obcaecati tempora vel voluptates beatae aliquid eaque nostrum quo unde!</p>
           </div>
         ))}
       </div>
