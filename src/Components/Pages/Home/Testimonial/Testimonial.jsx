@@ -38,7 +38,7 @@ const Testimonial = () => {
   const aosAnimations = ['fade-right', 'fade-up', 'fade-left'];
 
   return (
-    <div className="bg-green-50 py-15 px-5 lg:px-10 mx-auto text-center">
+    <div className="container  py-15 px-5 lg:px-10 mx-auto text-center">
       <p className="text-orange-500 text-sm font-medium mb-2">What Our Travelers Say</p>
       <h2 className="text-3xl font-bold text-gray-800 mb-12">Testimonials</h2>
 
@@ -47,7 +47,7 @@ const Testimonial = () => {
           <div
             key={testimonial.id}
             data-aos={aosAnimations[index]}
-            className="bg-white rounded-xl p-6 shadow-md border hover:shadow-lg transition duration-300 text-left"
+            className="bg-white rounded-xl p-6 shadow-md  hover:shadow-lg transition duration-300 text-left"
           >
             <div className="flex items-center gap-4 mb-4">
               <img

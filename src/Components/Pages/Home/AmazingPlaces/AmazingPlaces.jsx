@@ -19,7 +19,7 @@ const AmazingPlaces = () => {
     const displayedPlaces = activeTab === 'All' ? filteredPlaces.slice(0, 8) : filteredPlaces.slice(0, 3);
 
     return (
-        <div className="text-center py-12 px-5 lg:px-10 mx-auto bg-white">
+        <div className="container text-center py-12 px-5 lg:px-10 mx-auto bg-white">
             <p className="text-orange-500 text-base font-medium mb-2">Popular Tour</p>
             <h2 className="text-3xl font-bold text-gray-800 mb-10 roboto">Amazing Tour Places</h2>
 

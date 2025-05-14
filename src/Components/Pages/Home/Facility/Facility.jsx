@@ -25,17 +25,19 @@ const services = [
 
 const Facility = () => {
     return (
-        <div className=''>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 bg-red-400 ">
-                {services.map((service) => (
-                    <div
-                        key={service.id}
-                        className="flex items-center gap-4  rounded-xl py-6 mx-auto "
-                    >
-                        <div className="mb-4">{service.icon}</div>
-                        <h3 className=" font-semibold  text-white mb-2">{service.name}</h3>
-                    </div>
-                ))}
+        <div className='bg-red-500'>
+            <div className=' container px-5 lg:px-10 mx-auto'>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8  ">
+                    {services.map((service) => (
+                        <div
+                            key={service.id}
+                            className="flex items-center gap-4  rounded-xl py-6 mx-auto "
+                        >
+                            <div className="mb-4">{service.icon}</div>
+                            <h3 className=" font-semibold  text-white mb-2">{service.name}</h3>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     );

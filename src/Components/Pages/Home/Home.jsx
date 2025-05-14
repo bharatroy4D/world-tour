@@ -9,7 +9,7 @@ import DemoCard from './DemoCard/DemoCard';
 
 const Home = () => {
     return (
-        <div className='w-full container mx-auto'>
+        <div>
             <Banner/>
             <Destination/>
             <About/>

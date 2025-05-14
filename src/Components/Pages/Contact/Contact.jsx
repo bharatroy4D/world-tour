@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaEnvelope, FaUser, FaCommentDots, FaPaperPlane } from 'react-icons/fa';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -18,23 +19,24 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission (e.g., send form data to an API)
     console.log('Form submitted:', formData);
-    alert('Your message has been sent!');
+    alert('Thank you! Your message has been sent.');
   };
 
   return (
-    <div className="bg-white py-16 px-5 lg:px-20">
-      <h2 className="text-3xl font-bold text-gray-800 text-center mb-8">Contact Us</h2>
-      <p className="text-center text-lg text-gray-600 mb-6">
-        We'd love to hear from you! Please fill out the form below to get in touch.
-      </p>
+    <section className="bg-gray-50 py-20 px-5 lg:px-0">
+      <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-8 md:p-12">
+        <h2 className="text-4xl font-bold text-gray-800 text-center mb-4">Get in Touch</h2>
+        <p className="text-center text-gray-600 mb-8">
+          Fill out the form below and we’ll get back to you as soon as possible.
+        </p>
 
-      <form onSubmit={handleSubmit} className="max-w-xl mx-auto space-y-6">
-        <div className="flex flex-col space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-6">
+          {/* Name Field */}
           <div>
-            <label className="block text-gray-700 text-lg" htmlFor="name">
-              Your Name
+            <label htmlFor="name" className="block text-gray-700 font-medium mb-1">
+              <FaUser className="inline-block mr-2 text-green-500" />
+              Name
             </label>
             <input
               type="text"
@@ -43,13 +45,16 @@ const Contact = () => {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500"
+              placeholder="Enter your name"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500"
             />
           </div>
 
+          {/* Email Field */}
           <div>
-            <label className="block text-gray-700 text-lg" htmlFor="email">
-              Your Email
+            <label htmlFor="email" className="block text-gray-700 font-medium mb-1">
+              <FaEnvelope className="inline-block mr-2 text-green-500" />
+              Email
             </label>
             <input
               type="email"
@@ -58,50 +63,56 @@ const Contact = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500"
+              placeholder="Enter your email"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500"
             />
           </div>
 
+          {/* Message Field */}
           <div>
-            <label className="block text-gray-700 text-lg" htmlFor="message">
-              Your Message
+            <label htmlFor="message" className="block text-gray-700 font-medium mb-1">
+              <FaCommentDots className="inline-block mr-2 text-green-500" />
+              Message
             </label>
             <textarea
               id="message"
               name="message"
+              rows="5"
               value={formData.message}
               onChange={handleChange}
               required
-              rows="5"
-              className="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500"
-            />
+              placeholder="Write your message here..."
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500 resize-none"
+            ></textarea>
           </div>
 
-          <div className="flex items-center">
+          {/* Subscribe */}
+          <div className="flex items-center space-x-2">
             <input
               type="checkbox"
               id="subscribe"
               name="subscribe"
               checked={formData.subscribe}
               onChange={handleChange}
-              className="mr-2"
+              className="text-green-600 focus:ring-green-500"
             />
-            <label htmlFor="subscribe" className="text-gray-600 text-lg">
+            <label htmlFor="subscribe" className="text-gray-700">
               Subscribe to our newsletter
             </label>
           </div>
 
-          <div className="flex justify-center">
+          {/* Submit Button */}
+          <div className="pt-4">
             <button
               type="submit"
-              className="w-full py-3 px-6 bg-green-600 text-white rounded-lg hover:bg-green-700 transition"
+              className="w-full flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white text-lg font-semibold py-3 rounded-lg shadow-md transition"
             >
-              Send Message
+              <FaPaperPlane /> Send Message
             </button>
           </div>
-        </div>
-      </form>
-    </div>
+        </form>
+      </div>
+    </section>
   );
 };
 
