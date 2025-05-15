@@ -7,6 +7,7 @@ import Testimonial from './Testimonial/Testimonial';
 import Facility from './Facility/Facility';
 import DemoCard from './DemoCard/DemoCard';
 import Blogs from '../Blogs/Blogs'
+import GoogleMap from './GoogleMap/GoogleMap';
 
 const Home = () => {
     return (
@@ -18,6 +19,7 @@ const Home = () => {
             <DemoCard/>
             <Testimonial/>
             <Blogs></Blogs>
+            <GoogleMap></GoogleMap>
             <Facility/>
         </div>
     );
