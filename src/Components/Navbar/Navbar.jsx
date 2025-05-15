@@ -10,7 +10,7 @@ const Navbar = () => {
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
     return (
-        <div className=' container mx-auto px-5 lg:px-10 poppins '>
+        <div className=' container mx-auto px-5 lg:px-10 poppins shadow-lg'>
             <div className='flex items-center justify-between py-4  '>
                 {/* Logo */}
                 <img src={logo} alt="Logo" className='w-28' />

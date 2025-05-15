@@ -29,6 +29,34 @@ const blogs = [
     description: 'Discover some lesser-known but incredible destinations in Asia that will blow your mind.',
     link: '/blog/exploring-hidden-gems-in-asia',
   },
+   {
+    id: 5,
+    title: 'Top 10 Places to Visit in Europe',
+    image: 'https://img.freepik.com/free-photo/full-shot-smiley-woman-taking-selfie_23-2149818239.jpg?uid=R180858093&semt=ais_hybrid&w=740',
+    description: 'Explore the beauty of Europe with our top 10 destinations to visit in 2023.',
+    link: '/blog/top-10-places-to-visit-in-europe',
+  },
+  {
+    id: 6,
+    title: 'How to Travel on a Budget',
+    image: 'https://img.freepik.com/free-photo/top-view-hands-holding-phone-photos_23-2149617680.jpg?uid=R180858093&semt=ais_hybrid&w=740',
+    description: 'Traveling doesn’t have to break the bank. Here are some tips to travel on a budget.',
+    link: '/blog/how-to-travel-on-a-budget',
+  },
+   {
+    id: 7,
+    title: 'Top 10 Places to Visit in Europe',
+    image: 'https://img.freepik.com/free-photo/high-angle-man-working-travel-agency_52683-136450.jpg?uid=R180858093&semt=ais_hybrid&w=740',
+    description: 'Explore the beauty of Europe with our top 10 destinations to visit in 2023.',
+    link: '/blog/top-10-places-to-visit-in-europe',
+  },
+  {
+    id: 8,
+    title: 'How to Travel on a Budget',
+    image: 'https://img.freepik.com/free-photo/overhead-view-travelling-bag-map-camera-pair-footwear-wooden-table_23-2147856134.jpg?uid=R180858093&semt=ais_hybrid&w=740',
+    description: 'Traveling doesn’t have to break the bank. Here are some tips to travel on a budget.',
+    link: '/blog/how-to-travel-on-a-budget',
+  },
 ];
 
 
