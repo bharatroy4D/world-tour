@@ -29,7 +29,7 @@ const DemoCard = () => {
                     <div
                         key={place.id}
                         data-aos={index % 2 === 0 ? 'fade-right' : 'fade-left'}
-                        className="relative rounded-2xl overflow-hidden shadow-lg group h-64"
+                        className="relative rounded-2xl overflow-hidden shadow-lg group h-72"
                     >
                         <img
                             src={place.image}
