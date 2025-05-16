@@ -24,7 +24,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="bg-gray-50 py-20 px-5 lg:px-0">
+    <section className="relative top-5 bg-gray-50 py-20 px-5 lg:px-0">
       <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-8 md:p-12">
         <h2 className="text-4xl font-bold text-gray-800 text-center mb-4">Get in Touch</h2>
         <p className="text-center text-gray-600 mb-8">

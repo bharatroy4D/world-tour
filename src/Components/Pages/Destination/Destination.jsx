@@ -92,7 +92,7 @@ const Destination = () => {
   }, []);
 
   return (
-    <div className="container bg-white py-16 px-5 lg:px-10 mx-auto text-center">
+    <div className="container relative top-5 bg-white py-16 px-5 lg:px-10 mx-auto text-center">
       <p className="text-orange-500 text-base font-medium mb-2">Top Travel Spots</p>
       <h2 className="text-3xl font-bold text-gray-800 mb-10">Popular Destinations</h2>
 

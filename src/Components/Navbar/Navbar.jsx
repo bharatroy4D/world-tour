@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { HiMenuAlt3, HiX } from 'react-icons/hi';
 import { CiHeart, CiSearch } from 'react-icons/ci';
-import logo from '../../assets/logo.svg';
+import { FaPlaneDeparture } from 'react-icons/fa'; // Professional plane icon
+
+// import logo from '../../assets/logo.svg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,10 +13,11 @@ const Navbar = () => {
   return (
     <header className="bg-white shadow-md fixed w-full z-50">
       <div className="container mx-auto px-4 lg:px-10 py-4 flex justify-between items-center">
-        {/* Logo */}
-        <NavLink to="/">
-          <img src={logo} alt="Logo" className="w-32" />
-        </NavLink>
+     {/* Logo */}
+<NavLink to="/" className="flex items-center gap-2 text-blue-600 font-bold text-2xl">
+  <FaPlaneDeparture className="text-4xl text-orange-500" />
+  <span className="tracking-wide">TravelMate</span>
+</NavLink>
 
         {/* Desktop Menu */}
         <nav className="hidden lg:flex items-center gap-8 text-gray-700 font-medium">
