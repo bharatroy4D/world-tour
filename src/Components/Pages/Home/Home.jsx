@@ -6,7 +6,7 @@ import AmazingPlaces from './AmazingPlaces/AmazingPlaces';
 import Testimonial from './Testimonial/Testimonial';
 import Facility from './Facility/Facility';
 import DemoCard from './DemoCard/DemoCard';
-import Blogs from '../Blogs/Blogs'
+import TravelBlogs from './TravelBlogs/TravelBlogs';
 const Home = () => {
     return (
         <div>
@@ -16,7 +16,7 @@ const Home = () => {
             <AmazingPlaces/>
             <DemoCard/>
             <Testimonial/>
-            <Blogs></Blogs>
+            <TravelBlogs/>
             <Facility/>
         </div>
     );

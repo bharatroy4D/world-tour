@@ -70,7 +70,7 @@ const Blogs = () => {
   }, []);
 
   return (
-    <div className="container relative top-5 bg-white w-full py-16 px-5 lg:px-10 mx-auto text-center">
+    <div className="container relative top-5  w-full py-16 px-5 lg:px-10 mx-auto text-center">
       <p className="text-orange-500 text-base font-medium mb-2">Travel Blog</p>
       <h2 className="text-3xl font-bold text-gray-800 mb-10">Latest Travel Blogs</h2>
 

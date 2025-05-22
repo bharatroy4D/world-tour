@@ -4,7 +4,7 @@ import hero_2 from '../../../../assets/hero_2.jpg'; // ✅ Importing hero_2 imag
 
 const Banner = () => {
   return (
-    <div className='relative w-screen h-[90vh] overflow-hidden'>
+    <div className='relative w-screen h-[70vh] lg:h-[90vh] overflow-hidden'>
 
       {/* ✅ Background Image with Zoom Animation */}
       <motion.img
@@ -30,7 +30,7 @@ const Banner = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 1 }}
-          className='text-white text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4'
+          className='text-white w-screen  text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4'
         >
           Explore The World With Us
         </motion.h1>

@@ -13,6 +13,7 @@ import Destination from './Components/Pages/Destination/Destination.jsx';
 import Services from './Components/Pages/Services/Services.jsx';
 import Blogs from './Components/Pages/Blogs/Blogs.jsx';
 import Contact from './Components/Pages/Contact/Contact.jsx';
+import ViewDetails from './Components/ViewDetails/ViewDetails.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
         path:'/contact',
         element:<Contact/>
       },
+      {
+        path:'/viewDetails/:id',
+        element:<ViewDetails/>
+      }
     ]
   },
 ]);
