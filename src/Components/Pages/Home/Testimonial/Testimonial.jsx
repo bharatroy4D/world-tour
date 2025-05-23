@@ -38,7 +38,7 @@ const Testimonial = () => {
   const aosAnimations = ['fade-right', 'fade-up', 'fade-left'];
 
   return (
-    <div className="container  py-10 px-5 lg:px-10 mx-auto text-center">
+    <div className="container  py-10 px-5 lg:px-10 mx-auto text-center ">
       <p className="text-orange-500 text-sm font-medium mb-2">What Our Travelers Say</p>
       <h2 className="text-3xl font-bold text-gray-800 mb-12">Testimonials</h2>
 

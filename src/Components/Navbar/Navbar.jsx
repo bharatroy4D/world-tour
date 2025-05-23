@@ -11,13 +11,16 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="bg-white shadow-md fixed top-0 w-full z-50">
-      <div className="container mx-auto px-4 lg:px-10 py-4 flex justify-between items-center">
-     {/* Logo */}
-<NavLink to="/" className="flex items-center gap-2 text-blue-600 font-bold text-2xl">
-  <FaPlaneDeparture className="text-4xl text-orange-500" />
-  <span className="tracking-wide">TravelMate</span>
-</NavLink>
+
+    // <header className="bg-white shadow-md fixed top-0 w-full  mx-auto z-50">
+    //   <div className="container mx-auto px-4 lg:px-10 py-4 flex justify-between items-center">
+    // {/* Logo */ }
+    <header  className = "bg-white shadow-md fixed top-0 w-full z-50" >
+      <div className="container mx-auto px-5 lg:px-10 py-4 flex justify-between items-center">
+        <NavLink to="/" className="flex items-center gap-2 text-blue-600 font-bold text-2xl">
+          <FaPlaneDeparture className="text-4xl text-orange-500" />
+          <span className="tracking-wide">TravelMate</span>
+        </NavLink>
 
         {/* Desktop Menu */}
         <nav className="hidden lg:flex items-center gap-8 text-gray-700 font-medium">
@@ -46,27 +49,29 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      {isOpen && (
-        <div className="lg:hidden bg-white px-4 py-6 shadow-md">
-          <nav className="flex flex-col gap-4 text-gray-800 font-semibold">
-            <NavLink to="/" onClick={toggleMenu}>Home</NavLink>
-            <NavLink to="/about" onClick={toggleMenu}>About</NavLink>
-            <NavLink to="/destination" onClick={toggleMenu}>Destinations</NavLink>
-            <NavLink to="/services" onClick={toggleMenu}>Services</NavLink>
-            <NavLink to="/blogs" onClick={toggleMenu}>Blogs</NavLink>
-            <NavLink to="/contact" onClick={toggleMenu}>Contact</NavLink>
-          </nav>
-          <div className="flex gap-5 mt-5">
-            <CiSearch className="text-2xl text-gray-600" />
-            <CiHeart className="text-2xl text-gray-600" />
-          </div>
-          <button className="mt-4 w-full bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 rounded-full">
-            Book Now
-          </button>
+  {/* Mobile Menu */ }
+  {
+    isOpen && (
+      <div className="lg:hidden bg-white px-4 py-6 shadow-md">
+        <nav className="flex flex-col gap-4 text-gray-800 font-semibold">
+          <NavLink to="/" onClick={toggleMenu}>Home</NavLink>
+          <NavLink to="/about" onClick={toggleMenu}>About</NavLink>
+          <NavLink to="/destination" onClick={toggleMenu}>Destinations</NavLink>
+          <NavLink to="/services" onClick={toggleMenu}>Services</NavLink>
+          <NavLink to="/blogs" onClick={toggleMenu}>Blogs</NavLink>
+          <NavLink to="/contact" onClick={toggleMenu}>Contact</NavLink>
+        </nav>
+        <div className="flex gap-5 mt-5">
+          <CiSearch className="text-2xl text-gray-600" />
+          <CiHeart className="text-2xl text-gray-600" />
         </div>
-      )}
-    </header>
+        <button className="mt-4 w-full bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 rounded-full">
+          Book Now
+        </button>
+      </div>
+    )
+  }
+    </header >
   );
 };
 

@@ -1,6 +1,13 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+body, html {
+  overflow-x: hidden;
+}
+body, html {
+  overflow-x: clip;
+}
+
 
 .roboto {
   font-family: "Roboto", sans-serif;

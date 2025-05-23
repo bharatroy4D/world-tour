@@ -9,7 +9,7 @@ import DemoCard from './DemoCard/DemoCard';
 import TravelBlogs from './TravelBlogs/TravelBlogs';
 const Home = () => {
     return (
-        <div>
+        <div className=''>
             <Banner/>
             <Destination/>
             <About/>
