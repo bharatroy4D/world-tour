@@ -8,7 +8,7 @@ import plan from '../../../assets/plane_shape.png';
 const About = () => {
   useEffect(() => {
     AOS.init({
-      duration: 3000,
+      duration: 4000,
       once: true,
     });
 
@@ -17,7 +17,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="bg-base-200 py-20 px-5 lg:px-10">
+    <div className="bg-base-200 pt-20 pb-10 lg:py-20 px-5 lg:px-10">
       <div className="container mx-auto flex flex-col lg:flex-row items-center gap-12">
         {/* Left Side - Image Section */}
         <div className="relative w-full lg:w-[50%]" data-aos="fade-right">
@@ -47,9 +47,9 @@ const About = () => {
             About <span className="text-pink-500">Our Journey</span>
           </h2>
           <p className="text-gray-800 text-base md:text-lg mb-6">
-            We are a passionate team of travelers who believe in exploring the world and sharing the beauty of every destination. With years of experience, we help people plan unforgettable trips.
+            We are a passionate team of travelers who believe in exploring the world and sharing the beauty of every destination. With years of experience, we help people plan unforgettable.
           </p>
-          <ul className="text-black space-y-2 mb-6 text-sm md:text-base">
+          <ul className="text-black hidden lg:block space-y-2 mb-6 text-sm md:text-base">
             <li>✅ Over 100+ destinations covered</li>
             <li>✅ Experienced local guides</li>
             <li>✅ Personalized travel experiences</li>

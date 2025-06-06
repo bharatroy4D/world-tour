@@ -96,7 +96,7 @@ const Destination = () => {
       <p className="text-orange-500 text-base font-medium mb-2">Top Travel Spots</p>
       <h2 className="text-3xl font-bold text-gray-800 mb-10">Popular Destinations</h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         {destinations.map((dest, index) => (
           <div
             key={dest.id}
@@ -104,17 +104,17 @@ const Destination = () => {
             data-aos-delay={index * 100}
             className="bg-white border border-gray-100 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group"
           >
-            <div className="overflow-hidden h-52">
+            <div className="overflow-hidden lg:h-52">
               <img
                 src={dest.image}
                 alt={dest.name}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                className="w-full h-28 lg:h-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
             </div>
-            <div className="p-5 text-left space-y-2">
+            <div className=" p-3 lg:p-5 text-left lg:space-y-2">
               <h3 className="text-lg font-semibold text-gray-800">{dest.name}</h3>
               <p className="text-sm text-gray-500">{dest.location}</p>
-              <p className="text-sm"><span className="font-medium">Estimated Budget:</span> {dest.budget}</p>
+              <p className="text-sm hidden lg:block"><span className="font-medium">Estimated Budget:</span> {dest.budget}</p>
               <p className="text-sm"><span className="font-medium">Best Time:</span> {dest.bestTime}</p>
               <div className="flex items-center text-yellow-500 gap-1">
                 {Array.from({ length: 5 }).map((_, i) => (

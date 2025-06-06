@@ -20,7 +20,7 @@ const AmazingPlaces = () => {
     const displayedPlaces = activeTab === 'All' ? filteredPlaces.slice(0, 8) : filteredPlaces.slice(0, 3);
 
     return (
-        <div className="container text-center py-12 px-5 lg:px-10 mx-auto bg-white ">
+        <div className="container text-center py-8 lg:py-12 px-5 lg:px-10 mx-auto bg-white ">
             <p className="text-orange-500 text-base font-medium mb-2">Popular Tour</p>
             <h2 className="text-3xl font-bold text-gray-800 mb-10 roboto">Amazing Tour Places</h2>
 
@@ -32,8 +32,8 @@ const AmazingPlaces = () => {
                         onClick={() => setActiveTab(tab)}
                         className={`px-6 py-2 rounded-md text-sm font-medium transition border-b-2
               ${activeTab === tab
-                                ? 'text-green-600 bg-green-50 border-green-500'
-                                : 'text-gray-700 bg-green-50 border-transparent hover:border-green-300'
+                                ? 'text-green-600 bg-green-200 border-green-500'
+                                : 'text-gray-700 bg-green-200 border-transparent hover:border-green-300'
                             }`}
                     >
                         {tab}
@@ -41,7 +41,7 @@ const AmazingPlaces = () => {
                 ))}
             </div>
             {/* Grid of Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 {displayedPlaces.map(place => (
                     <Link to={`/viewDetails/${place.id}`}>
                         <div data-aos="fade-up"
@@ -51,18 +51,18 @@ const AmazingPlaces = () => {
                             <img
                                 src={place.image}
                                 alt={place.name}
-                                className="w-full h-56 object-cover rounded-t-2xl "
+                                className="w-full lg:h-56 object-cover rounded-t-2xl "
                             />
                             <div className="p-5 text-left">
                                 <div className='flex items-center justify-between'>
                                     <h3 className="text-md font-bold text-gray-700">{place.name}</h3>
-                                    <div className="flex items-center text-yellow-500 text-sm mb-2">
+                                    <div className="hidden lg:inline-flex items-center text-yellow-500 text-sm mb-2">
                                         {[...Array(5)].map((_, i) => (
                                             <FaStar key={i} className={i < place.rating ? 'text-yellow-500' : 'text-yellow-300'} />
                                         ))}
                                     </div>
                                 </div>
-                                <p className="text-sm text-gray-600 ">{place.description}</p>
+                                <p className="text-sm hidden lg:block text-gray-600 ">{place.description}</p>
                                 <p className=" font-semibold ">Price :{place.price}</p>
                                 <p className="text-gray-500 text-sm font-semibold ">Duration :{place.duration}</p>
                                 <div>

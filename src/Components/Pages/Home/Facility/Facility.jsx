@@ -27,7 +27,7 @@ const Facility = () => {
     return (
         <div className='bg-red-500'>
             <div className=' container px-5 lg:px-10 py-5 mx-auto '>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8  ">
+                <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8  ">
                     {services.map((service) => (
                         <div
                             key={service.id}
