@@ -17,7 +17,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="bg-base-200 pt-20 pb-10 lg:py-20 px-5 lg:px-10">
+    <div className="bg-base-200 pt-20 pb-10  px-5 lg:px-10">
       <div className="container mx-auto flex flex-col lg:flex-row items-center gap-12">
         {/* Left Side - Image Section */}
         <div className="relative w-full lg:w-[50%]" data-aos="fade-right">

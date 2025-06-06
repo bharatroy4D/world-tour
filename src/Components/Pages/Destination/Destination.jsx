@@ -22,7 +22,7 @@ const destinations = [
     rating: 4.7,
     popularFor: 'Beaches, Surfing',
     budget: '$800 - $1,500',
-    bestTime: 'May to September',
+    bestTime: ' September',
   },
   {
     id: 3,
@@ -56,17 +56,17 @@ const destinations = [
   },
   {
     id: 6,
-    name: 'Koh Nangyuan',
+    name: 'Nangyuan',
     location: 'Thailand',
     image: 'https://img.freepik.com/free-photo/beautiful-viewpoint-koh-nangyuan-island-surat-thani-thailand_335224-1097.jpg?uid=R180858093&semt=ais_hybrid&w=740',
     rating: 4.9,
     popularFor: 'Island Views, Hiking',
     budget: '$600 - $900',
-    bestTime: 'November to March',
+    bestTime: ' March',
   },
   {
     id: 7,
-    name: 'Nang Yuan Island',
+    name: 'Nang Yuan',
     location: 'Thailand',
     image: 'https://img.freepik.com/free-photo/woman-bikini-sitting-viewpoint-nang-yuan-island-thailand_335224-1091.jpg?uid=R180858093&semt=ais_hybrid&w=740',
     rating: 4.7,
@@ -76,7 +76,7 @@ const destinations = [
   },
   {
     id: 8,
-    name: 'Kelingking Beach',
+    name: 'Kelingking ',
     location: 'Bali, Indonesia',
     image: 'https://img.freepik.com/free-photo/woman-walking-kelingking-beach-nusa-penida-island-bali-indonesia_335224-337.jpg?uid=R180858093&semt=ais_hybrid&w=740',
     rating: 4.8,
@@ -113,7 +113,7 @@ const Destination = () => {
             </div>
             <div className=" p-3 lg:p-5 text-left lg:space-y-2">
               <h3 className="text-lg font-semibold text-gray-800">{dest.name}</h3>
-              <p className="text-sm text-gray-500">{dest.location}</p>
+              <p className="text-sm hidden lg:block text-gray-500">{dest.location}</p>
               <p className="text-sm hidden lg:block"><span className="font-medium">Estimated Budget:</span> {dest.budget}</p>
               <p className="text-sm"><span className="font-medium">Best Time:</span> {dest.bestTime}</p>
               <div className="flex items-center text-yellow-500 gap-1">

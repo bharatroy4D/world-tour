@@ -53,7 +53,7 @@ const AmazingPlaces = () => {
                                 alt={place.name}
                                 className="w-full lg:h-56 object-cover rounded-t-2xl "
                             />
-                            <div className="p-5 text-left">
+                            <div className=" p-3 lg:p-5 text-left">
                                 <div className='flex items-center justify-between'>
                                     <h3 className="text-md font-bold text-gray-700">{place.name}</h3>
                                     <div className="hidden lg:inline-flex items-center text-yellow-500 text-sm mb-2">
@@ -66,7 +66,7 @@ const AmazingPlaces = () => {
                                 <p className=" font-semibold ">Price :{place.price}</p>
                                 <p className="text-gray-500 text-sm font-semibold ">Duration :{place.duration}</p>
                                 <div>
-                                    <button className='font-semibold text-white bg-blue-400 hover:bg-blue-600 py-2 px-4 rounded-md mt-2
+                                    <button className='text-sm font-semibold text-white bg-blue-400 hover:bg-blue-600 py-2  px-2 lg:px-4 rounded-md mt-2
                                 '>View Details</button>
                                 </div>
                             </div>
