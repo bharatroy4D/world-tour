@@ -1,13 +1,13 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import Header from '../Components/Shared/Header/Header';
-import Footer from '../Components/Shared/Footer/Footer';
 import TopToScroll from '../Components/TopToScroll/TopToScroll';
+import Navbar from '../shared/Navbar/Navbar';
+import Footer from '../shared/Footer/Footer';
 const Root = () => {
     return (
         <div>
             <TopToScroll/>
-            <Header/>
+            <Navbar/>
             <Outlet/>
             <Footer/>
         </div>
